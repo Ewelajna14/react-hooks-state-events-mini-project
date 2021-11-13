@@ -10,7 +10,7 @@ import { CATEGORIES, TASKS } from "../data";
 function App() {
   const[tasks, setTask] = useState(TASKS)
   const [filterBy, setFilterBy]=useState("All")
-  const[submittedData, setSubmittedData]= useState([])
+  
   
   function filterTaskByCategory(event){
     setFilterBy(()=> event.target.innerText)
